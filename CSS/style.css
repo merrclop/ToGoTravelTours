@@ -1,0 +1,630 @@
+/*                                           */
+body{
+    margin: 0;
+    font-family: 'M PLUS 2', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    /*max-width: 1920px;*/
+}
+/*Conteiner*/
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*intro*/
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/1.jpg") center no-repeat;
+    background-size:cover;
+}
+.intro_inner{
+    width: 100%;
+    max-width: 1000px; /*максимальна ширина*/
+    margin: 0 auto; /*вирівнювання*/
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.intro_title:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+    
+    background-color: white;
+}
+
+.intro_title{
+    font-size: 150px;/*розмір шрифту */
+    font-weight: 700; /*жирність*/
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+/*header*/
+.header{
+    width: 100%;
+    padding-top: 30px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header_logo{
+    font-size: 30px;
+    font-weight: 700;
+    
+    color: #fff;
+    
+}
+.header_s{
+    text-decoration: none;
+    color: white;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*nav*/
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.nav_link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    position: relative;
+    
+    color: #fff;
+    text-decoration: none;
+    
+    transition: color .2s linear;
+   
+}
+
+.nav_link:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    
+    background-color: #48560b;
+    opacity: 0;
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+    transition: opacity 0.2s linear;
+}
+.nav_link:hover {
+    color: #48560b;
+}
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+/*button*/
+.btn{
+    display: inline-block;
+    vertical-align:top;
+    padding: 10px 20px;
+    
+    border: 3px solid #fff;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700px; 
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none; /*забираємо підкреслення*/
+   
+    transition: background 0.2s linear, color 0.2s linear;
+}
+
+.btn:hover{
+    background-color: white;
+    color: #48560b;
+}
+
+/**************************page 1******************************************/
+.section{
+    padding: 24px;
+    font-weight: 700;
+}
+.section_header{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    
+    text-align: center;
+}
+.section_title{
+    margin-top: 40px;
+    font-size: 30px;
+    
+    text-align: center;
+    
+    color: black;
+    text-transform: uppercase;
+}
+/*text*/
+.section_text{
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.section_text:after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: 50px auto;
+    
+    background-color: black;
+}
+
+/*photos*/
+.photos{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    margin: 0 40px 40px;
+}
+/**/
+@media (max-width:1080px){
+    .photos{
+        max-width: 1080px;
+    }
+}
+
+/*names of photos*/
+.name_1{
+    text-align: center;
+}
+.foter{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+/************************pages with counties***********************************/
+/*review*/
+.titleI{
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+/*lust 2*/
+.nameI{
+    margin: 0 auto;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+    margin: 20px auto;
+    text-align: center;
+}
+.nameI:after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: 20px auto;
+    
+    background-color: black;
+}
+
+/*text */
+.textI{
+    margin: 5px auto;
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/***************************page faroe*************************************/
+.introF{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/page%202.jpg") center no-repeat;
+    background-size:cover;
+}
+.information_F{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/back%20for%20faroe.jpg") center no-repeat;
+    background-size:cover;
+}
+
+/*************************page italy***************************************/
+.introI{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/page%20italy.jpg") center no-repeat;
+    background-size:cover;
+}
+.information_I{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/back%20for%20ITALY.jpg") center no-repeat;
+    background-size:cover;
+}
+
+/******************************page usa********************************/
+.introU{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/page%20USA.jpg") center no-repeat;
+    background-size:cover;
+}
+.information_U{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/Back%20for%20USA.jpg") center no-repeat;
+    background-size:cover;
+}
+
+/*************************page sweden*************************************/
+.introS{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/back1_sweden.jpg.png") center no-repeat;
+    background-size:cover;
+}
+.information_S{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/back2_sweden.jpg") center no-repeat;
+    background-size:cover;
+}
+
+/************************************page canada****************************/
+.introC{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/back1_canada.jpg") center no-repeat;
+    background-size:cover;
+}
+.information_C{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/back2_canada.jpg") center no-repeat;
+    background-size:cover;
+}
+.nameC{
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+    margin: 20px auto;
+    text-align: center;
+}
+/*.nameC:after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: 20px auto;
+    
+    background-color: white;
+}*/
+
+/********************************page france*****************/
+.introFr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/back1_france.jpg") center no-repeat;
+    background-size:cover;
+}
+.information_Fr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+    
+    background: url("../images/back2_france.jpg") center no-repeat;
+    background-size:cover;
+}
+/*таблиця*/
+table {
+    font-size: 14px;
+    
+    max-width: 90%;
+    width: 90%;
+    border-collapse: collapse; /*забирає відстань між клітинками*/
+    text-align: center; /*центрує вміст*/
+    margin: 0 auto;/*віступ зверху*/ 
+    
+}
+caption{/*заголовок таблиці*/
+    caption-side:top; /*розміщення заголовку*/
+    
+    color:white;
+    font-size: 14px;
+} 
+th { /*рядки*/
+  /*font-weight: normal;*/
+  color: #fff;
+  border-bottom: 2px solid #333; /*нижня грань*/
+  padding: 10px 8px;
+}
+td { /*стовпці*/
+  color: rgb(150, 150, 150); /*колір тексту*/
+  padding: 9px 8px;
+  transition: .1s linear;
+}
+tr:hover td {
+  color: #fff;
+}
+
+.table_i{
+    margin: 0 auto;
+    max-width: 50%;
+    width: 50%;
+    background: rgba(0,0,0, 0.7);
+    border-radius: 10px;
+    
+}
+
+/*Тривалість*/
+.duration{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    
+    margin: 20px auto 0;
+}
+
+/*блок музики*/
+.label{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto 0;
+}
+.audio{ 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0;
+    padding: 3px 2px;
+}
+.divider{
+    margin: 40px auto 0;
+    background: rgba(0,0,0, 0.7); 
+    max-width: 21%;
+    width: 21%;
+    border-radius: 10px;
+}
+/**Order button**/
+.OrderBtn{
+    display: inline-block;
+    vertical-align:top;
+    padding: 10px 20px;
+    margin: 20px auto 25px;
+    display: flex;
+    justify-content: center;
+    
+    border: 3px solid #fff;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700px; 
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none; /*забираємо підкреслення*/
+    
+    width: 80px;
+   
+    transition: background 0.2s linear, color 0.2s linear, border 0.2s linear;
+}
+
+.OrderBtn:hover{
+    background-color: #367b25;
+    border: 3px solid #367b25;
+    color: black;
+}
+/******************************page ABIUT US*************************/
+.Inform{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background: url("../images/back%20for%20about.jpg") center no-repeat;
+    background-size:cover;
+}
+.titlel{
+    font-size: 14px;
+    text-align: center;
+    font-family: 'M PLUS 2', sans-serif;
+    text-transform: uppercase;
+}
+.Block{
+    padding: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.45); 
+    max-width: 50%;
+    width: 50%;
+    border-radius: 10px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 5px;
+}
+/*lust 2 about us*/
+.backG{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background: url("../images/back_about.png") center no-repeat;
+    
+    background-size:cover;
+}
+.title_video{
+    margin-top: 40px;
+    font-size: 15px;
+    
+    text-align: center;
+    
+    color: black;
+    text-transform: uppercase;
+}
+.title_video:after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 3px;
+    margin: 50px auto;
+    
+    background-color: black;
+}
+
+.Video{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 40px;
+    
+}
+/******************************Order page*********************************/
+.OrderForm{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100%;
+    /*height: 165vh;*/
+    background: url("../images/forOrder.jpg") center no-repeat;
+    /*background-size:cover;*/
+}
+
+.form{
+    
+   /*display: flex;
+    flex-direction: column;
+    justify-content: center;*/
+    margin: 80px auto 0;
+}
+
+/*.OrderBtnCancel{
+    display: inline-block;
+    vertical-align:top;
+    padding: 10px 20px;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+    
+    border: 3px solid #fff;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700px; 
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none; /*забираємо підкреслення
+    
+    width: 80px;
+    
+    transition: background 0.2s linear, color 0.2s linear, border 0.2s linear;
+}
+
+.OrderBtnCancel:hover{
+    background-color: #eb8a8a;
+    border: 3px solid #eb8a8a;
+    color: black;
+}*/
+
